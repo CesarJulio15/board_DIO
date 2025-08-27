@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    application
 }
 
 group = "br.com.dio"
@@ -19,4 +20,9 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    // aqui você aponta para sua classe Main
+    mainClass.set("br.com.dio.Main")
 }
